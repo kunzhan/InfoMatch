@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=4,5,6,7 torchrun --nproc_per_node 4 --master_port=5656 --master_addr=localhost ImageNet_0119.py --batch-size 32  # batch-size=128

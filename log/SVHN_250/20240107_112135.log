@@ -1,0 +1,1419 @@
+WARNING:__main__:Process rank: -1, device: cuda:7, n_gpu: 8, distributed training: False, 16-bits training: False
+INFO:__main__:{'gpu_id': 7, 'seed': 2, 'num_workers': 4, 'dataset': 'SVHN', 'num_labeled': 250, 'expand_labels': False, 'arch': 'wideresnet', 'total_steps': 1048576, 'eval_step': 1024, 'start_epoch': 0, 'batch_size': 64, 'lr': 0.03, 'warmup': 0, 'wdecay': 0.0005, 'nesterov': True, 'use_ema': True, 'ema_decay': 0.999, 'mu': 7, 'lambda_u': 1, 'T': 1, 'threshold': 0.95, 'out': 'result/SVHN@250_freematch6', 'resume': '', 'amp': False, 'opt_level': 'O1', 'local_rank': -1, 'no_progress': False, 'warmbatch': 0, 'first_stride': 1, 'world_size': 1, 'n_gpu': 8, 'device': device(type='cuda', index=7)}
+INFO:models.wideresnet:Model: WideResNet 28x2
+INFO:__main__:Total params: 1.47M
+INFO:__main__:***** Running training *****
+INFO:__main__:  Task = SVHN@250
+INFO:__main__:  Num Epochs = 1024
+INFO:__main__:  Batch size per GPU = 64
+INFO:__main__:  Total train batch size = 64
+INFO:__main__:  Total optimization steps = 1048576
+INFO:__main__:Warmup
+INFO:__main__:lr:0.02999989190466883,data:0.09262747166212648,bt:0.11775481712538749,loss:0.2178886076763078
+INFO:__main__:1/1024
+INFO:__main__:lr:0.029999756785687438,data:0.33274893602356315,bt:0.7688836629968137,loss:0.6347114103666142,loss_x:0.023512371024253298,loss_u:0.3055995196711803,mask:0.45260404254077
+INFO:__main__:top-1 acc: 19.80
+INFO:__main__:top-5 acc: 64.08
+INFO:__main__:Best top-1 acc: 19.80
+INFO:__main__:Mean top-1 acc: 19.80
+
+INFO:__main__:2/1024
+INFO:__main__:lr:0.029999567619454295,data:0.09938504244200885,bt:0.5313561691436917,loss:0.5986877308881045,loss_x:0.008443217690000893,loss_u:0.2951222565990518,mask:0.59088573322515
+INFO:__main__:top-1 acc: 80.27
+INFO:__main__:top-5 acc: 97.26
+INFO:__main__:Best top-1 acc: 80.27
+INFO:__main__:Mean top-1 acc: 50.03
+
+INFO:__main__:3/1024
+INFO:__main__:lr:0.029999324406310198,data:0.09939517360180616,bt:0.5304589178413153,loss:0.6527164078037985,loss_x:0.005550195502792121,loss_u:0.3235831061505031,mask:0.695652584603522
+INFO:__main__:top-1 acc: 90.08
+INFO:__main__:top-5 acc: 99.00
+INFO:__main__:Best top-1 acc: 90.08
+INFO:__main__:Mean top-1 acc: 63.38
+
+INFO:__main__:4/1024
+INFO:__main__:lr:0.02999902714669331,data:0.10024180030450225,bt:0.5378351367544383,loss:0.7415124781153277,loss_x:0.004032612906826216,loss_u:0.36873993260425075,mask:0.8118853238993324
+INFO:__main__:top-1 acc: 92.58
+INFO:__main__:top-5 acc: 99.22
+INFO:__main__:Best top-1 acc: 92.58
+INFO:__main__:Mean top-1 acc: 70.68
+
+INFO:__main__:5/1024
+INFO:__main__:lr:0.02999867584113918,data:0.09743719594553113,bt:0.5317615463864058,loss:0.771225798938627,loss_x:0.002900514710290736,loss_u:0.3841626421141681,mask:0.8709368436248042
+INFO:__main__:top-1 acc: 93.83
+INFO:__main__:top-5 acc: 99.35
+INFO:__main__:Best top-1 acc: 93.83
+INFO:__main__:Mean top-1 acc: 75.31
+
+INFO:__main__:6/1024
+INFO:__main__:lr:0.029998270490280716,data:0.09863233473151922,bt:0.530859395628795,loss:0.7769230970941029,loss_x:0.0024056307681803446,loss_u:0.3872587331629614,mask:0.8981323660700582
+INFO:__main__:top-1 acc: 94.53
+INFO:__main__:top-5 acc: 99.47
+INFO:__main__:Best top-1 acc: 94.53
+INFO:__main__:Mean top-1 acc: 78.52
+
+INFO:__main__:7/1024
+INFO:__main__:lr:0.029997811094848188,data:0.09852466196753085,bt:0.5311474581249058,loss:0.7730194875188862,loss_x:0.0022762677986634117,loss_u:0.3853716098601114,mask:0.9113094214699231
+INFO:__main__:top-1 acc: 94.98
+INFO:__main__:top-5 acc: 99.54
+INFO:__main__:Best top-1 acc: 94.98
+INFO:__main__:Mean top-1 acc: 80.87
+
+INFO:__main__:8/1024
+INFO:__main__:lr:0.029997297655669244,data:0.09836001158691943,bt:0.52667624829337,loss:0.7642339925832344,loss_x:0.0017985098821213796,loss_u:0.3812177413505565,mask:0.9215131906676106
+INFO:__main__:top-1 acc: 95.43
+INFO:__main__:top-5 acc: 99.55
+INFO:__main__:Best top-1 acc: 95.43
+INFO:__main__:Mean top-1 acc: 82.69
+
+INFO:__main__:9/1024
+INFO:__main__:lr:0.029996730173668888,data:0.0969631839543581,bt:0.5254655100870878,loss:0.761645984604773,loss_x:0.001922193000154948,loss_u:0.3798618958023089,mask:0.9296635643113405
+INFO:__main__:top-1 acc: 95.73
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 95.73
+INFO:__main__:Mean top-1 acc: 84.14
+
+INFO:__main__:10/1024
+INFO:__main__:lr:0.02999610864986949,data:0.09918655711226165,bt:0.5296613620594144,loss:0.7503432486537529,loss_x:0.0018429266920065857,loss_u:0.3742501609808731,mask:0.9326521066832356
+INFO:__main__:top-1 acc: 95.95
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 95.95
+INFO:__main__:Mean top-1 acc: 85.32
+
+INFO:__main__:11/1024
+INFO:__main__:lr:0.029995433085390776,data:0.09739771648310125,bt:0.528730402700603,loss:0.7444860520412555,loss_x:0.0015170108430311302,loss_u:0.3714845205991122,mask:0.9379992226604372
+INFO:__main__:top-1 acc: 96.16
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 96.16
+INFO:__main__:Mean top-1 acc: 86.30
+
+INFO:__main__:12/1024
+INFO:__main__:lr:0.029994703481449846,data:0.09717803238891065,bt:0.5269576972350478,loss:0.7379468975151414,loss_x:0.001375954506954713,loss_u:0.36828547150409346,mask:0.9415588806150481
+INFO:__main__:top-1 acc: 96.30
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 96.30
+INFO:__main__:Mean top-1 acc: 87.14
+
+INFO:__main__:13/1024
+INFO:__main__:lr:0.02999391983936114,data:0.09608938964083791,bt:0.5266744629479945,loss:0.7347607138710793,loss_x:0.0016587195561612589,loss_u:0.366550997157459,mask:0.9438171816291288
+INFO:__main__:top-1 acc: 96.44
+INFO:__main__:top-5 acc: 99.60
+INFO:__main__:Best top-1 acc: 96.44
+INFO:__main__:Mean top-1 acc: 87.85
+
+INFO:__main__:14/1024
+INFO:__main__:lr:0.029993082160536456,data:0.09747616085223854,bt:0.5273012339603156,loss:0.7268093744354329,loss_x:0.0012857553233800445,loss_u:0.3627618095560263,mask:0.945888017420657
+INFO:__main__:top-1 acc: 96.56
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 96.56
+INFO:__main__:Mean top-1 acc: 88.47
+
+INFO:__main__:15/1024
+INFO:__main__:lr:0.02999219044648496,data:0.09907528315670788,bt:0.5365966255776584,loss:0.7254511960150609,loss_x:0.0013654384256369667,loss_u:0.36204287879471203,mask:0.9477801073226146
+INFO:__main__:top-1 acc: 96.70
+INFO:__main__:top-5 acc: 99.60
+INFO:__main__:Best top-1 acc: 96.70
+INFO:__main__:Mean top-1 acc: 89.02
+
+INFO:__main__:16/1024
+INFO:__main__:lr:0.029991244698813146,data:0.09864699537865818,bt:0.5300587376113981,loss:0.7201893985321667,loss_x:0.0011653484074258813,loss_u:0.3595120250623704,mask:0.9502236926346086
+INFO:__main__:top-1 acc: 96.76
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 96.76
+INFO:__main__:Mean top-1 acc: 89.51
+
+INFO:__main__:17/1024
+INFO:__main__:lr:0.029990244919224862,data:0.09761161054484546,bt:0.5314840159844607,loss:0.7176698937222513,loss_x:0.001199463386313937,loss_u:0.35823521516796875,mask:0.9515250498661771
+INFO:__main__:top-1 acc: 96.78
+INFO:__main__:top-5 acc: 99.58
+INFO:__main__:Best top-1 acc: 96.78
+INFO:__main__:Mean top-1 acc: 89.93
+
+INFO:__main__:18/1024
+INFO:__main__:lr:0.029989191109521304,data:0.09835932450369,bt:0.5289445009548217,loss:0.7169842485682544,loss_x:0.0014600594743114925,loss_u:0.35776209454697144,mask:0.9528416654211469
+INFO:__main__:top-1 acc: 96.82
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 96.82
+INFO:__main__:Mean top-1 acc: 90.32
+
+INFO:__main__:19/1024
+INFO:__main__:lr:0.029988083271601004,data:0.09718702710233629,bt:0.526100249029696,loss:0.7113759473660782,loss_x:0.0009760288538416262,loss_u:0.3551999592561183,mask:0.9564209413365461
+INFO:__main__:top-1 acc: 96.86
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 96.86
+INFO:__main__:Mean top-1 acc: 90.66
+
+INFO:__main__:20/1024
+INFO:__main__:lr:0.02998692140745983,data:0.09865628322586417,bt:0.5280190780758858,loss:0.7163042732560134,loss_x:0.002076626448740626,loss_u:0.3571138234036364,mask:0.9540710880537517
+INFO:__main__:top-1 acc: 96.82
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 96.86
+INFO:__main__:Mean top-1 acc: 90.97
+
+INFO:__main__:21/1024
+INFO:__main__:lr:0.02998570551919099,data:0.09901988017372787,bt:0.5296630342490971,loss:0.7075415866284723,loss_x:0.0008992684664690387,loss_u:0.35332115908100176,mask:0.959041093767155
+INFO:__main__:top-1 acc: 96.90
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 96.90
+INFO:__main__:Mean top-1 acc: 94.82
+
+INFO:__main__:22/1024
+INFO:__main__:lr:0.02998443560898501,data:0.09889546502381563,bt:0.5289803443010896,loss:0.706546441802458,loss_x:0.0009628270009187645,loss_u:0.3527918074007696,mask:0.9601746024563909
+INFO:__main__:top-1 acc: 96.98
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 96.98
+INFO:__main__:Mean top-1 acc: 95.66
+
+INFO:__main__:23/1024
+INFO:__main__:lr:0.029983111679129745,data:0.0980309231672436,bt:0.5326904731336981,loss:0.7026690686514427,loss_x:0.0009424997548990177,loss_u:0.3508632844482719,mask:0.9603598885587417
+INFO:__main__:top-1 acc: 96.97
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 96.98
+INFO:__main__:Mean top-1 acc: 96.00
+
+INFO:__main__:24/1024
+INFO:__main__:lr:0.02998173373201038,data:0.09738043555989861,bt:0.527167312335223,loss:0.7026887818231714,loss_x:0.0007986010525371512,loss_u:0.3509450903853171,mask:0.9607239187462255
+INFO:__main__:top-1 acc: 96.99
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 96.99
+INFO:__main__:Mean top-1 acc: 96.22
+
+INFO:__main__:25/1024
+INFO:__main__:lr:0.029980301770109404,data:0.09704185533337295,bt:0.526471319841221,loss:0.7024772644238964,loss_x:0.0009853835420869927,loss_u:0.3507459404409047,mask:0.9615239172126167
+INFO:__main__:top-1 acc: 97.03
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.03
+INFO:__main__:Mean top-1 acc: 96.38
+
+INFO:__main__:26/1024
+INFO:__main__:lr:0.02997881579600663,data:0.09772582165896893,bt:0.5309580008033663,loss:0.6989835980910984,loss_x:0.000907142459482202,loss_u:0.3490382278158081,mask:0.9620339954271913
+INFO:__main__:top-1 acc: 97.10
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.10
+INFO:__main__:Mean top-1 acc: 96.51
+
+INFO:__main__:27/1024
+INFO:__main__:lr:0.029977275812379175,data:0.0986003465950489,bt:0.5264151799492538,loss:0.6998281008419829,loss_x:0.0007995352353020735,loss_u:0.34951428280334035,mask:0.962727181147784
+INFO:__main__:top-1 acc: 97.18
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.18
+INFO:__main__:Mean top-1 acc: 96.62
+
+INFO:__main__:28/1024
+INFO:__main__:lr:0.029975681822001447,data:0.09739028010517359,bt:0.5285789126064628,loss:0.6955353523241362,loss_x:0.0007898034329514303,loss_u:0.3473727744455924,mask:0.9637059232918546
+INFO:__main__:top-1 acc: 97.17
+INFO:__main__:top-5 acc: 99.67
+INFO:__main__:Best top-1 acc: 97.18
+INFO:__main__:Mean top-1 acc: 96.71
+
+INFO:__main__:29/1024
+INFO:__main__:lr:0.029974033827745175,data:0.09810328227467835,bt:0.5274873005691916,loss:0.69452823020249,loss_x:0.0008757090483442198,loss_u:0.3468262605770729,mask:0.9638650502893142
+INFO:__main__:top-1 acc: 97.20
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.20
+INFO:__main__:Mean top-1 acc: 96.78
+
+INFO:__main__:30/1024
+INFO:__main__:lr:0.02997233183257936,data:0.09820401878096163,bt:0.5274007604457438,loss:0.6966978231368305,loss_x:0.0011876004281106134,loss_u:0.34775511135435994,mask:0.9631042903638445
+INFO:__main__:top-1 acc: 97.18
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.20
+INFO:__main__:Mean top-1 acc: 96.84
+
+INFO:__main__:31/1024
+INFO:__main__:lr:0.0299705758395703,data:0.10145934717729688,bt:0.5281100848224014,loss:0.692842745866895,loss_x:0.0007172674033739668,loss_u:0.34606273923176056,mask:0.9640546950977296
+INFO:__main__:top-1 acc: 97.15
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.20
+INFO:__main__:Mean top-1 acc: 96.89
+
+INFO:__main__:32/1024
+INFO:__main__:lr:0.02996876585188158,data:0.10063567198812962,bt:0.5277622109279037,loss:0.6934687607406466,loss_x:0.0007830282926875043,loss_u:0.34634286622397953,mask:0.9650356183992699
+INFO:__main__:top-1 acc: 97.19
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.20
+INFO:__main__:Mean top-1 acc: 96.94
+
+INFO:__main__:33/1024
+INFO:__main__:lr:0.02996690187277405,data:0.09825660521164536,bt:0.5278546686749905,loss:0.6945974397059781,loss_x:0.0010732070934835747,loss_u:0.34676211630624726,mask:0.9646388885448687
+INFO:__main__:top-1 acc: 97.23
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.23
+INFO:__main__:Mean top-1 acc: 96.98
+
+INFO:__main__:34/1024
+INFO:__main__:lr:0.029964983905605837,data:0.09830502467229962,bt:0.530478258850053,loss:0.6912185273369189,loss_x:0.0008045557781031221,loss_u:0.3452069857794079,mask:0.9652775789727457
+INFO:__main__:top-1 acc: 97.23
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.23
+INFO:__main__:Mean top-1 acc: 97.01
+
+INFO:__main__:35/1024
+INFO:__main__:lr:0.02996301195383233,data:0.09997812146320939,bt:0.5296832574531436,loss:0.6889434604281919,loss_x:0.0006957553026580854,loss_u:0.34412385256276695,mask:0.9653015556395985
+INFO:__main__:top-1 acc: 97.24
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.24
+INFO:__main__:Mean top-1 acc: 97.04
+
+INFO:__main__:36/1024
+INFO:__main__:lr:0.029960986021006178,data:0.09976861858740449,bt:0.5281707120593637,loss:0.6895565292631325,loss_x:0.00094874966596592,loss_u:0.3443038897985833,mask:0.965290657710284
+INFO:__main__:top-1 acc: 97.19
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.24
+INFO:__main__:Mean top-1 acc: 97.06
+
+INFO:__main__:37/1024
+INFO:__main__:lr:0.02995890611077728,data:0.10007340298034251,bt:0.5324590839445591,loss:0.6868827715858522,loss_x:0.0008574823010150112,loss_u:0.3430126446424187,mask:0.9655064604594372
+INFO:__main__:top-1 acc: 97.24
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.24
+INFO:__main__:Mean top-1 acc: 97.08
+
+INFO:__main__:38/1024
+INFO:__main__:lr:0.02995677222689278,data:0.09977496787905693,bt:0.5305392805021256,loss:0.6883346039986049,loss_x:0.0007097423120967505,loss_u:0.3438124308432541,mask:0.9662192630930804
+INFO:__main__:top-1 acc: 97.34
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.11
+
+INFO:__main__:39/1024
+INFO:__main__:lr:0.02995458437319706,data:0.09820048836991191,bt:0.532258446328342,loss:0.6871352526227017,loss_x:0.0007185628074211081,loss_u:0.34320834490764024,mask:0.9658094551414251
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.13
+
+INFO:__main__:40/1024
+INFO:__main__:lr:0.029952342553631738,data:0.09970465884543955,bt:0.530886011896655,loss:0.6836457578109244,loss_x:0.0008139979013037646,loss_u:0.3414158799548103,mask:0.9659010081086308
+INFO:__main__:top-1 acc: 97.28
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.16
+
+INFO:__main__:41/1024
+INFO:__main__:lr:0.029950046772235648,data:0.09997451305389404,bt:0.5300566751975566,loss:0.6863147019928395,loss_x:0.0007588099759203715,loss_u:0.34277794600845957,mask:0.9661843862850219
+INFO:__main__:top-1 acc: 97.31
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.18
+
+INFO:__main__:42/1024
+INFO:__main__:lr:0.029947697033144854,data:0.1000419503543526,bt:0.5294845385942608,loss:0.6877378528266954,loss_x:0.0008570810842485344,loss_u:0.34344038587122344,mask:0.966677027172409
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.19
+
+INFO:__main__:43/1024
+INFO:__main__:lr:0.029945293340592614,data:0.09924560226500034,bt:0.5321140957530588,loss:0.6839287966585552,loss_x:0.0006694605360024752,loss_u:0.34162966806127637,mask:0.9668405131087638
+INFO:__main__:top-1 acc: 97.28
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.21
+
+INFO:__main__:44/1024
+INFO:__main__:lr:0.0299428356989094,data:0.10001516388729215,bt:0.5288479700684547,loss:0.6821168024890774,loss_x:0.0008002705955476586,loss_u:0.34065826594676485,mask:0.9665702157071792
+INFO:__main__:top-1 acc: 97.27
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.22
+
+INFO:__main__:45/1024
+INFO:__main__:lr:0.029940324112522874,data:0.09847529884427786,bt:0.5281800176016986,loss:0.683291502254742,loss_x:0.0007237968878541778,loss_u:0.3412838526834439,mask:0.9670890141860582
+INFO:__main__:top-1 acc: 97.25
+INFO:__main__:top-5 acc: 99.60
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.23
+
+INFO:__main__:46/1024
+INFO:__main__:lr:0.029937758585957878,data:0.09833341208286583,bt:0.5298274985980242,loss:0.6824306961447628,loss_x:0.0006331466380231632,loss_u:0.3408987747533698,mask:0.9673593139159493
+INFO:__main__:top-1 acc: 97.30
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.24
+
+INFO:__main__:47/1024
+INFO:__main__:lr:0.029935139123836448,data:0.09837927669286728,bt:0.5301499024499208,loss:0.6820744742505859,loss_x:0.0006005042252752446,loss_u:0.3407369850126553,mask:0.9676971856388263
+INFO:__main__:top-1 acc: 97.27
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.25
+
+INFO:__main__:48/1024
+INFO:__main__:lr:0.02993246573087777,data:0.09882071102038026,bt:0.5317568283062428,loss:0.6821675093738457,loss_x:0.0006451618117608859,loss_u:0.3407611737810424,mask:0.9674922827980481
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.26
+
+INFO:__main__:49/1024
+INFO:__main__:lr:0.02992973841189821,data:0.10155844548717141,bt:0.5348567864857614,loss:0.6815657050233253,loss_x:0.0008466227751569022,loss_u:0.3403595411240842,mask:0.9665941937128082
+INFO:__main__:top-1 acc: 97.34
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.26
+
+INFO:__main__:50/1024
+INFO:__main__:lr:0.02992695717181127,data:0.09872663673013449,bt:0.5272467734757811,loss:0.6800595968732871,loss_x:0.0005849524874861345,loss_u:0.3397373221929005,mask:0.9679456875310279
+INFO:__main__:top-1 acc: 97.30
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.27
+
+INFO:__main__:51/1024
+INFO:__main__:lr:0.029924122015627608,data:0.09976450656540692,bt:0.5304268526379019,loss:0.678225567682556,loss_x:0.0007434323012773802,loss_u:0.33874106769063933,mask:0.967762581189163
+INFO:__main__:top-1 acc: 97.31
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.34
+INFO:__main__:Mean top-1 acc: 97.28
+
+INFO:__main__:52/1024
+INFO:__main__:lr:0.029921232948455015,data:0.09984454535879195,bt:0.5279702248517424,loss:0.682401321187732,loss_x:0.0012826161215713228,loss_u:0.34055935253308034,mask:0.965639430040028
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.35
+INFO:__main__:Mean top-1 acc: 97.28
+
+INFO:__main__:53/1024
+INFO:__main__:lr:0.029918289975498395,data:0.10098298476077616,bt:0.5291124978102744,loss:0.6779646982102331,loss_x:0.0005735638680022248,loss_u:0.33869556717111543,mask:0.9679958228371106
+INFO:__main__:top-1 acc: 97.34
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.35
+INFO:__main__:Mean top-1 acc: 97.29
+
+INFO:__main__:54/1024
+INFO:__main__:lr:0.029915293102059783,data:0.09807745064608753,bt:0.5265206925105304,loss:0.6792227071329637,loss_x:0.0006640638810750943,loss_u:0.3392793216259443,mask:0.9674704842618667
+INFO:__main__:top-1 acc: 97.30
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.35
+INFO:__main__:Mean top-1 acc: 97.29
+
+INFO:__main__:55/1024
+INFO:__main__:lr:0.029912242333538317,data:0.10064390068873763,bt:0.5315846242010593,loss:0.6776745772472289,loss_x:0.0009193435777348213,loss_u:0.33837761683474704,mask:0.9669822027208284
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.38
+INFO:__main__:Mean top-1 acc: 97.30
+
+INFO:__main__:56/1024
+INFO:__main__:lr:0.029909137675430228,data:0.09976229048334062,bt:0.5284853870980442,loss:0.6780097019599385,loss_x:0.0005635037401390264,loss_u:0.33872309910989973,mask:0.9679631247418001
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.31
+
+INFO:__main__:57/1024
+INFO:__main__:lr:0.029905979133328837,data:0.09924689261242747,bt:0.527817634632811,loss:0.6760074202879707,loss_x:0.0007305641014028197,loss_u:0.337638428093284,mask:0.968287920113653
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.32
+
+INFO:__main__:58/1024
+INFO:__main__:lr:0.02990276671292454,data:0.0986098856665194,bt:0.5277393287979066,loss:0.6766518457965567,loss_x:0.0006461384376166279,loss_u:0.33800285367947003,mask:0.968063396285288
+INFO:__main__:top-1 acc: 97.37
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.32
+
+INFO:__main__:59/1024
+INFO:__main__:lr:0.0298995004200048,data:0.09838751284405589,bt:0.5322684387210757,loss:0.6770630300122723,loss_x:0.0006928316422545322,loss_u:0.3381850991850089,mask:0.9680982741410844
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.32
+
+INFO:__main__:60/1024
+INFO:__main__:lr:0.02989618026045414,data:0.0995789528824389,bt:0.5316788693889976,loss:0.6772341395556866,loss_x:0.0007907540587268613,loss_u:0.33822169274847985,mask:0.968043778440915
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.58
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.33
+
+INFO:__main__:61/1024
+INFO:__main__:lr:0.029892806240254116,data:0.09950132411904633,bt:0.5309171942062676,loss:0.6756537778637145,loss_x:0.0006903376939249029,loss_u:0.3374817200848948,mask:0.9677364233648404
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.33
+
+INFO:__main__:62/1024
+INFO:__main__:lr:0.02988937836548334,data:0.09934886451810598,bt:0.5317634623497725,loss:0.6752560335723988,loss_x:0.0007397961968962363,loss_u:0.3372581186877513,mask:0.9674792031873949
+INFO:__main__:top-1 acc: 97.37
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.41
+INFO:__main__:Mean top-1 acc: 97.33
+
+INFO:__main__:63/1024
+INFO:__main__:lr:0.029885896642317427,data:0.09860720043070614,bt:0.5296773666050285,loss:0.6741846018146059,loss_x:0.0005935946003745585,loss_u:0.3367955036071157,mask:0.9686061738757417
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.45
+INFO:__main__:Mean top-1 acc: 97.34
+
+INFO:__main__:64/1024
+INFO:__main__:lr:0.029882361077029018,data:0.09952337201684713,bt:0.5308331369888037,loss:0.6743660221681539,loss_x:0.0005255984586369777,loss_u:0.33692021185475846,mask:0.968789279460907
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.45
+INFO:__main__:Mean top-1 acc: 97.35
+
+INFO:__main__:65/1024
+INFO:__main__:lr:0.02987877167598775,data:0.09996467712335289,bt:0.5303829372860491,loss:0.6741447780415589,loss_x:0.0011405035179734568,loss_u:0.33650213726179273,mask:0.9663958295132034
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.46
+INFO:__main__:Mean top-1 acc: 97.36
+
+INFO:__main__:66/1024
+INFO:__main__:lr:0.029875128445660246,data:0.1012557945214212,bt:0.53196089877747,loss:0.6710048575402475,loss_x:0.0007139196877119502,loss_u:0.3351454689262678,mask:0.9669124478241429
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.60
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.36
+
+INFO:__main__:67/1024
+INFO:__main__:lr:0.02987143139261012,data:0.10035537253133953,bt:0.5319035151042044,loss:0.6731587076315492,loss_x:0.0006010593051541946,loss_u:0.3362788241631975,mask:0.9689658458228223
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.37
+
+INFO:__main__:68/1024
+INFO:__main__:lr:0.029867680523497937,data:0.1000427259132266,bt:0.5300235478207469,loss:0.6743207037643099,loss_x:0.0006850462959704373,loss_u:0.3368178287341697,mask:0.9683118967805058
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.38
+
+INFO:__main__:69/1024
+INFO:__main__:lr:0.029863875845081232,data:0.10192708694376051,bt:0.5342435634229332,loss:0.6731110895846034,loss_x:0.0008973244647734191,loss_u:0.33610688255991494,mask:0.9663086356013082
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.38
+
+INFO:__main__:70/1024
+INFO:__main__:lr:0.029860017364214467,data:0.10092823882587254,bt:0.5299497372470796,loss:0.6726355580573322,loss_x:0.0005682658162555754,loss_u:0.3360336461205383,mask:0.9685952760046348
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:71/1024
+INFO:__main__:lr:0.029856105087849045,data:0.09940137853845954,bt:0.5280013622250408,loss:0.6727104938424766,loss_x:0.0005315360994018192,loss_u:0.3360894788715374,mask:0.9690682971267961
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:72/1024
+INFO:__main__:lr:0.029852139023033283,data:0.1001825244165957,bt:0.5296061304397881,loss:0.6724166227920197,loss_x:0.0011023970626382606,loss_u:0.3356571128646907,mask:0.968111353518907
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:73/1024
+INFO:__main__:lr:0.0298481191769124,data:0.10026879981160164,bt:0.5274168408941478,loss:0.6723214616274503,loss_x:0.0005711592416730582,loss_u:0.33587515119288863,mask:0.9685974551830441
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:74/1024
+INFO:__main__:lr:0.029844045556728514,data:0.10035351919941604,bt:0.528750826837495,loss:0.6720184901935146,loss_x:0.0006574445760207936,loss_u:0.3356805228087469,mask:0.9685298799886368
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:75/1024
+INFO:__main__:lr:0.02983991816982061,data:0.09914979455061257,bt:0.5294539316091686,loss:0.6741366929633281,loss_x:0.0009757536013808021,loss_u:0.33658046968097366,mask:0.967934787273407
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:76/1024
+INFO:__main__:lr:0.02983573702362455,data:0.10160745540633798,bt:0.5368009668309242,loss:0.6701116192454694,loss_x:0.0006270355929558491,loss_u:0.33474229182625675,mask:0.9685603977413848
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:77/1024
+INFO:__main__:lr:0.02983150212567304,data:0.10094193113036454,bt:0.5320850450079888,loss:0.6707731601703358,loss_x:0.0007722067025355273,loss_u:0.33500047673390015,mask:0.9682966388645582
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:78/1024
+INFO:__main__:lr:0.029827213483595637,data:0.10117070865817368,bt:0.5291242168750614,loss:0.670079008418045,loss_x:0.0006235137417718306,loss_u:0.3347277473381366,mask:0.9685255207004957
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:79/1024
+INFO:__main__:lr:0.029822871105118706,data:0.09945212071761489,bt:0.5311677197460085,loss:0.6696650432464945,loss_x:0.0007655290293513417,loss_u:0.3344497571085715,mask:0.9678933701943606
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:80/1024
+INFO:__main__:lr:0.029818474998065433,data:0.09952256409451365,bt:0.52989537618123,loss:0.6693887614359648,loss_x:0.0008060102552889248,loss_u:0.33429137559033795,mask:0.9677734810393304
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:81/1024
+INFO:__main__:lr:0.029814025170355803,data:0.1006208744365722,bt:0.5285612589213997,loss:0.6686786885698696,loss_x:0.0006733222158317176,loss_u:0.334002683177019,mask:0.9679086300893687
+INFO:__main__:top-1 acc: 97.31
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:82/1024
+INFO:__main__:lr:0.029809521630006573,data:0.1007396187633276,bt:0.5317318039014935,loss:0.6687764171203899,loss_x:0.0005300014641420603,loss_u:0.33412320782812394,mask:0.9694214288028888
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:83/1024
+INFO:__main__:lr:0.02980496438513128,data:0.09902658895589411,bt:0.5289228230249137,loss:0.6695253113851576,loss_x:0.0005575524068888171,loss_u:0.33448387948913444,mask:0.9692470434238203
+INFO:__main__:top-1 acc: 97.30
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:84/1024
+INFO:__main__:lr:0.029800353443940206,data:0.0992315886542201,bt:0.5306491397786885,loss:0.6691838974477087,loss_x:0.0005802715710530038,loss_u:0.33430181293832784,mask:0.9694759247358888
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.47
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:85/1024
+INFO:__main__:lr:0.029795688814740377,data:0.10125154140405357,bt:0.5313435974530876,loss:0.6703559314773488,loss_x:0.0005400219936433359,loss_u:0.33490795474185275,mask:0.9691315114032477
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.48
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:86/1024
+INFO:__main__:lr:0.02979097050593554,data:0.10069510317407548,bt:0.5333693360444158,loss:0.6709214588230917,loss_x:0.0005162245498695484,loss_u:0.3352026171366111,mask:0.9695020826766267
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.48
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:87/1024
+INFO:__main__:lr:0.02978619852602615,data:0.09991022362373769,bt:0.528820873470977,loss:0.6681778804363909,loss_x:0.0009239058419439061,loss_u:0.3336269872972235,mask:0.9668950097402558
+INFO:__main__:top-1 acc: 97.37
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.48
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:88/1024
+INFO:__main__:lr:0.029781372883609363,data:0.10063884663395584,bt:0.5371746667660773,loss:0.6678014853200093,loss_x:0.0005450647006739473,loss_u:0.33362821030966755,mask:0.9687478641862981
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.48
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:89/1024
+INFO:__main__:lr:0.029776493587379,data:0.10177404922433197,bt:0.539760555839166,loss:0.6684257282998716,loss_x:0.0008193975353805172,loss_u:0.3338031653822455,mask:0.9673745718901046
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.48
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:90/1024
+INFO:__main__:lr:0.029771560646125548,data:0.10056304349564016,bt:0.5322246700525284,loss:0.6653773220056431,loss_x:0.0005591030552949405,loss_u:0.3324091094751741,mask:0.9688568544806913
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:91/1024
+INFO:__main__:lr:0.029766574068736153,data:0.1001872424967587,bt:0.5291006073821336,loss:0.6675542692748657,loss_x:0.0005101727495997466,loss_u:0.33352204826263304,mask:0.9690944547764957
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:92/1024
+INFO:__main__:lr:0.02976153386419457,data:0.099947553826496,bt:0.5317890357691795,loss:0.6678978997051622,loss_x:0.0009118332907291915,loss_u:0.3334930332072165,mask:0.9682465015212074
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.59
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:93/1024
+INFO:__main__:lr:0.02975644004158119,data:0.1004312108270824,bt:0.5303333546034992,loss:0.6667658158499428,loss_x:0.0005035848105734431,loss_u:0.33313111551968466,mask:0.9688110773568042
+INFO:__main__:top-1 acc: 97.36
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:94/1024
+INFO:__main__:lr:0.029751292610072984,data:0.10077119572088122,bt:0.5286677221301943,loss:0.6687146044227104,loss_x:0.0007311261933011792,loss_u:0.3339917391147046,mask:0.9686977262608707
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.60
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:95/1024
+INFO:__main__:lr:0.029746091578943517,data:0.10050417250022292,bt:0.5317782210186124,loss:0.6654169041994638,loss_x:0.0006073130892332301,loss_u:0.33240479555511526,mask:0.9690443184808828
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:96/1024
+INFO:__main__:lr:0.029740836957562904,data:0.09767799056135118,bt:0.5288688633590937,loss:0.6678947628140288,loss_x:0.0007452218009547096,loss_u:0.33357477050653705,mask:0.9686519500100985
+INFO:__main__:top-1 acc: 97.36
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:97/1024
+INFO:__main__:lr:0.029735528755397825,data:0.10074942419305444,bt:0.5343943990301341,loss:0.6660448369707374,loss_x:0.0005497862533729858,loss_u:0.3327475253586822,mask:0.9690835567307658
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:98/1024
+INFO:__main__:lr:0.02973016698201148,data:0.1016262995544821,bt:0.5308230356313288,loss:0.6655111817078442,loss_x:0.0006101115089620635,loss_u:0.33245053509944106,mask:0.9688437744625844
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:99/1024
+INFO:__main__:lr:0.029724751647063584,data:0.10005923896096647,bt:0.5296695609577,loss:0.6669852371743078,loss_x:0.001001955011176392,loss_u:0.33299164108156576,mask:0.9678955497802235
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:100/1024
+INFO:__main__:lr:0.029719282760310346,data:0.09871121007017791,bt:0.5285478217992932,loss:0.6685017476098899,loss_x:0.0007802148602422676,loss_u:0.3338607663748238,mask:0.9686628488707356
+INFO:__main__:top-1 acc: 97.37
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:101/1024
+INFO:__main__:lr:0.029713760331604458,data:0.10098919807933271,bt:0.5300066929776222,loss:0.668687539007014,loss_x:0.0006471815779747203,loss_u:0.33402017871451967,mask:0.9698355965083465
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:102/1024
+INFO:__main__:lr:0.029708184370895074,data:0.10076894238591194,bt:0.528408600250259,loss:0.667010199431222,loss_x:0.0004911544329644357,loss_u:0.33325952249912877,mask:0.9694977242033929
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:103/1024
+INFO:__main__:lr:0.02970255488822778,data:0.10127442190423608,bt:0.534028732450679,loss:0.6665085779889122,loss_x:0.0007334890150758611,loss_u:0.33288754448691815,mask:0.9694170697475784
+INFO:__main__:top-1 acc: 97.36
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:104/1024
+INFO:__main__:lr:0.0296968718937446,data:0.09893575427122414,bt:0.5277424235828221,loss:0.6676936192130951,loss_x:0.0006863197043003311,loss_u:0.3335036497543974,mask:0.9690399583778344
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:105/1024
+INFO:__main__:lr:0.029691135397683956,data:0.10088599869050086,bt:0.5318216148298234,loss:0.6671999337872498,loss_x:0.0007062159840529603,loss_u:0.33324685890159844,mask:0.9688001780887134
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:106/1024
+INFO:__main__:lr:0.029685345410380655,data:0.10094659775495529,bt:0.5291096535511315,loss:0.6629643794476762,loss_x:0.00044420269446732163,loss_u:0.3312600883766044,mask:0.9699336886988021
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:107/1024
+INFO:__main__:lr:0.029679501942265887,data:0.09955258923582733,bt:0.5289116043131799,loss:0.6655049005424647,loss_x:0.0005559998049591286,loss_u:0.3324744503687528,mask:0.9695369607652538
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:108/1024
+INFO:__main__:lr:0.02967360500386718,data:0.09930633055046201,bt:0.5309454293455929,loss:0.6672623043557688,loss_x:0.0008927648373173724,loss_u:0.33318476975922573,mask:0.9687020863057114
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:109/1024
+INFO:__main__:lr:0.029667654605808395,data:0.09977375832386315,bt:0.5299255771096796,loss:0.6629025860982861,loss_x:0.0005710006167589654,loss_u:0.3311657927407636,mask:0.9689614861272275
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:110/1024
+INFO:__main__:lr:0.02966165075880971,data:0.10044511966407299,bt:0.5304737170226872,loss:0.6647656082324755,loss_x:0.0006255869230784583,loss_u:0.33207001065469854,mask:0.9697200649534352
+INFO:__main__:top-1 acc: 97.32
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:111/1024
+INFO:__main__:lr:0.029655593473687597,data:0.10061255400069058,bt:0.5288667464628816,loss:0.665737538733218,loss_x:0.0008037380228671509,loss_u:0.3324669003551754,mask:0.9696263318764977
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.38
+
+INFO:__main__:112/1024
+INFO:__main__:lr:0.02964948276135479,data:0.10019844048656523,bt:0.5286867234390229,loss:0.6658598277734771,loss_x:0.0004488675188980551,loss_u:0.3327054801272895,mask:0.969979464483913
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:113/1024
+INFO:__main__:lr:0.029643318632820295,data:0.0981892915442586,bt:0.5290673451963812,loss:0.6665453155649396,loss_x:0.0007472123204195213,loss_u:0.33289905162226,mask:0.9693516755360179
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.68
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:114/1024
+INFO:__main__:lr:0.029637101099189333,data:0.09965489665046334,bt:0.529477994190529,loss:0.6625137979449599,loss_x:0.0004654541975810389,loss_u:0.33102417187368943,mask:0.9696045340388082
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:115/1024
+INFO:__main__:lr:0.029630830171663354,data:0.10054734046570957,bt:0.5296387923881412,loss:0.6672888225033944,loss_x:0.0008242019042796755,loss_u:0.33323231029955735,mask:0.9680808362318203
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:116/1024
+INFO:__main__:lr:0.02962450586153999,data:0.10038219904527068,bt:0.5323113177437335,loss:0.661893696662198,loss_x:0.0005382646551765902,loss_u:0.33067771600351065,mask:0.9690377801889554
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:117/1024
+INFO:__main__:lr:0.02961812818021306,data:0.09899310930632055,bt:0.5288415753748268,loss:0.6634020480126789,loss_x:0.0005263265128832018,loss_u:0.33143786074989795,mask:0.9694432277465239
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:118/1024
+INFO:__main__:lr:0.029611697139172527,data:0.1000924811232835,bt:0.5310712419450283,loss:0.6643497383719699,loss_x:0.0004828136651440218,loss_u:0.3319334623534129,mask:0.9700840972946025
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:119/1024
+INFO:__main__:lr:0.029605212750004488,data:0.09963007876649499,bt:0.5294755601789802,loss:0.6632091077984811,loss_x:0.0005453417073084665,loss_u:0.3313318830455863,mask:0.9695304202032275
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.67
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:120/1024
+INFO:__main__:lr:0.029598675024391154,data:0.10050402488559484,bt:0.5313657876104116,loss:0.6650802232534806,loss_x:0.0010912834617329281,loss_u:0.33199446989587383,mask:0.9689702053437941
+INFO:__main__:top-1 acc: 97.33
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:121/1024
+INFO:__main__:lr:0.029592083974110815,data:0.09963505924679339,bt:0.52857900923118,loss:0.662074751560213,loss_x:0.0008215657449284208,loss_u:0.33062659290764224,mask:0.9686781089985743
+INFO:__main__:top-1 acc: 97.35
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:122/1024
+INFO:__main__:lr:0.029585439611037847,data:0.09925450384616852,bt:0.5296163959428668,loss:0.6663269861974325,loss_x:0.0008389729969309201,loss_u:0.3327440066002508,mask:0.9680110811605118
+INFO:__main__:top-1 acc: 97.30
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:123/1024
+INFO:__main__:lr:0.02957874194714266,data:0.10029036994092166,bt:0.5322895119898021,loss:0.6645293328045835,loss_x:0.0006686012108474415,loss_u:0.331930365796868,mask:0.969589275191538
+INFO:__main__:top-1 acc: 97.40
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:124/1024
+INFO:__main__:lr:0.029571990994491704,data:0.09888111613690853,bt:0.5312342399265617,loss:0.6638974138153704,loss_x:0.00047228299705182053,loss_u:0.3317125654091593,mask:0.9702933595981449
+INFO:__main__:top-1 acc: 97.39
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:125/1024
+INFO:__main__:lr:0.029565186765247418,data:0.09946743864566088,bt:0.5319870139937848,loss:0.6643575742966877,loss_x:0.0008142854023844848,loss_u:0.3317716444471516,mask:0.968992002948653
+INFO:__main__:top-1 acc: 97.31
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.39
+
+INFO:__main__:126/1024
+INFO:__main__:lr:0.029558329271668234,data:0.10136857908219099,bt:0.5327615397982299,loss:0.6616565685311951,loss_x:0.000717042116804123,loss_u:0.3304697632071955,mask:0.9694366881158203
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:127/1024
+INFO:__main__:lr:0.029551418526108545,data:0.1001096444670111,bt:0.5292994033079594,loss:0.6647079612888324,loss_x:0.0006714210694980238,loss_u:0.3320182701096672,mask:0.9682443221099675
+INFO:__main__:top-1 acc: 97.38
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:128/1024
+INFO:__main__:lr:0.029544454541018672,data:0.10124779283069074,bt:0.5329124443233013,loss:0.6630294874371258,loss_x:0.0009978585975858323,loss_u:0.33101581441976996,mask:0.9688154375762679
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:129/1024
+INFO:__main__:lr:0.029537437328944864,data:0.09717961237765849,bt:0.5278084117453545,loss:0.6650507474653576,loss_x:0.0007902255125884494,loss_u:0.3321302609763846,mask:0.9690268806298263
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.49
+INFO:__main__:Mean top-1 acc: 97.40
+
+INFO:__main__:130/1024
+INFO:__main__:lr:0.029530366902529255,data:0.09880375606007874,bt:0.5321768189314753,loss:0.6629562398079395,loss_x:0.00042483728372388896,loss_u:0.3312657012621078,mask:0.9704503080574796
+INFO:__main__:top-1 acc: 97.53
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.53
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:131/1024
+INFO:__main__:lr:0.029523243274509853,data:0.10079628368839622,bt:0.5291014888789505,loss:0.6657897172951824,loss_x:0.0010253777446536105,loss_u:0.33238216977526436,mask:0.9686236126581207
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.53
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:132/1024
+INFO:__main__:lr:0.029516066457720515,data:0.10120617039501667,bt:0.5291824410669506,loss:0.6624205653184689,loss_x:0.00046456385253179633,loss_u:0.33097800073296857,mask:0.9697135266033001
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.68
+INFO:__main__:Best top-1 acc: 97.53
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:133/1024
+INFO:__main__:lr:0.029508836465090914,data:0.0998550143558532,bt:0.528152676532045,loss:0.662016538888725,loss_x:0.0006381855610584353,loss_u:0.3306891766638333,mask:0.9692710207309574
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.53
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:134/1024
+INFO:__main__:lr:0.029501553309646534,data:0.0999652158934623,bt:0.5303063264582306,loss:0.6631525982588038,loss_x:0.00047498724576655604,loss_u:0.3313388055065186,mask:0.9703216975321993
+INFO:__main__:top-1 acc: 97.56
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:135/1024
+INFO:__main__:lr:0.029494217004508633,data:0.10058325529098511,bt:0.529954174766317,loss:0.6666576464170747,loss_x:0.0012418740176229903,loss_u:0.33270788619972586,mask:0.9683293359121308
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.67
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:136/1024
+INFO:__main__:lr:0.02948682756289422,data:0.10071130003780127,bt:0.5323151680640876,loss:0.6592478001329378,loss_x:0.0004597437165188012,loss_u:0.3293940282082095,mask:0.9687849193578586
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.41
+
+INFO:__main__:137/1024
+INFO:__main__:lr:0.029479384998116042,data:0.09852792718447745,bt:0.5280942914541811,loss:0.6588854238041747,loss_x:0.0005408242477926706,loss_u:0.329172299778191,mask:0.9692165257874876
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.42
+
+INFO:__main__:138/1024
+INFO:__main__:lr:0.02947188932358254,data:0.10105338762514293,bt:0.5315284391399473,loss:0.6608665516739575,loss_x:0.0005011330793109892,loss_u:0.33018270929732324,mask:0.9697222450631671
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.42
+
+INFO:__main__:139/1024
+INFO:__main__:lr:0.029464340552797848,data:0.1016305556986481,bt:0.5298015403095633,loss:0.662186123951835,loss_x:0.00044055865913605885,loss_u:0.33087278264634945,mask:0.9702911799540743
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.42
+
+INFO:__main__:140/1024
+INFO:__main__:lr:0.029456738699361752,data:0.10170195950195193,bt:0.5359105335082859,loss:0.6631279472536562,loss_x:0.00048132818726287496,loss_u:0.33132330953319666,mask:0.9698050795705058
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.69
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.43
+
+INFO:__main__:141/1024
+INFO:__main__:lr:0.02944908377696967,data:0.10120899276807904,bt:0.5358497726265341,loss:0.6637533627728738,loss_x:0.0009051010781035984,loss_u:0.3314241308473851,mask:0.9695979945245199
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.69
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.44
+
+INFO:__main__:142/1024
+INFO:__main__:lr:0.029441375799412636,data:0.09869712288491428,bt:0.5274987483862787,loss:0.6611342286859929,loss_x:0.0004928593618558352,loss_u:0.3303206846620686,mask:0.9700731973280199
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.45
+
+INFO:__main__:143/1024
+INFO:__main__:lr:0.02943361478057726,data:0.10111126187257469,bt:0.5287661831825972,loss:0.6612793939182857,loss_x:0.0006369377023105471,loss_u:0.3303212281079876,mask:0.9694192493334413
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.45
+
+INFO:__main__:144/1024
+INFO:__main__:lr:0.029425800734445715,data:0.10122321848757565,bt:0.5293604270555079,loss:0.6611624414733986,loss_x:0.0005233689152319698,loss_u:0.33031953627908334,mask:0.9694257883820683
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.45
+
+INFO:__main__:145/1024
+INFO:__main__:lr:0.029417933675095705,data:0.10124161350540817,bt:0.528052817331627,loss:0.6628030387182229,loss_x:0.0007032499558476957,loss_u:0.3310498943811876,mask:0.969624153280165
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.46
+
+INFO:__main__:146/1024
+INFO:__main__:lr:0.02941001361670044,data:0.09806004352867603,bt:0.5280044649261981,loss:0.6590592816462687,loss_x:0.0004588541279844094,loss_u:0.3293002137591422,mask:0.9697811008081771
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.46
+
+INFO:__main__:147/1024
+INFO:__main__:lr:0.029402040573528618,data:0.10032822284847498,bt:0.52956238319166,loss:0.6645700424249262,loss_x:0.0008300236829441587,loss_u:0.33187000937099104,mask:0.9697222447139211
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:148/1024
+INFO:__main__:lr:0.029394014559944392,data:0.10039528855122626,bt:0.5293497936800122,loss:0.6616915724975356,loss_x:0.0004296652436721615,loss_u:0.33063095362693173,mask:0.9705483992001973
+INFO:__main__:top-1 acc: 97.47
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:149/1024
+INFO:__main__:lr:0.029385935590407343,data:0.10040860087610781,bt:0.5289983719121665,loss:0.6641453449649996,loss_x:0.0009540774474317004,loss_u:0.3315956337587839,mask:0.9686148932087235
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:150/1024
+INFO:__main__:lr:0.02937780367947246,data:0.1006336179561913,bt:0.5315063986927271,loss:0.6599814316477208,loss_x:0.0004101709218673477,loss_u:0.32978563036292674,mask:0.9699685661471449
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:151/1024
+INFO:__main__:lr:0.02936961884179011,data:0.10071999998763204,bt:0.5312924236059189,loss:0.662735875493208,loss_x:0.0005213745170351558,loss_u:0.3311072504880864,mask:0.9700775570236146
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:152/1024
+INFO:__main__:lr:0.029361381092106013,data:0.1004605928901583,bt:0.5297766774892807,loss:0.6627884535588958,loss_x:0.0006054836559812315,loss_u:0.3310914849514573,mask:0.9698922716779634
+INFO:__main__:top-1 acc: 97.51
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:153/1024
+INFO:__main__:lr:0.02935309044526121,data:0.10029318789020181,bt:0.5322423388715833,loss:0.6626197905891701,loss_x:0.0007909874219009794,loss_u:0.33091440158363455,mask:0.9692797402967699
+INFO:__main__:top-1 acc: 97.53
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:154/1024
+INFO:__main__:lr:0.02934474691619205,data:0.099859633250162,bt:0.5292390917893499,loss:0.659663180549987,loss_x:0.0004641912539327109,loss_u:0.3295994946480271,mask:0.9700383204617538
+INFO:__main__:top-1 acc: 97.54
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:155/1024
+INFO:__main__:lr:0.029336350519930145,data:0.10041389125399292,bt:0.5318606190849096,loss:0.6630856936838728,loss_x:0.0005147606810851357,loss_u:0.3312854665013938,mask:0.970546220021788
+INFO:__main__:top-1 acc: 97.42
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:156/1024
+INFO:__main__:lr:0.029327901271602355,data:0.09979100851342082,bt:0.5281308614648879,loss:0.6626698706739962,loss_x:0.00048647054229178366,loss_u:0.3310917000658522,mask:0.9706726505537517
+INFO:__main__:top-1 acc: 97.41
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:157/1024
+INFO:__main__:lr:0.029319399186430763,data:0.10067745624110103,bt:0.5289123074617237,loss:0.6621050195142317,loss_x:0.0010090676544862731,loss_u:0.3305479759298726,mask:0.9695020823273808
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:158/1024
+INFO:__main__:lr:0.029310844279732632,data:0.0997255933471024,bt:0.5295944446697831,loss:0.6609158647422884,loss_x:0.0005829875171201593,loss_u:0.3301664386125841,mask:0.9705505796009675
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:159/1024
+INFO:__main__:lr:0.029302236566920395,data:0.10028711333870888,bt:0.5288349390029907,loss:0.6616850080028593,loss_x:0.0006244265455706,loss_u:0.33053029072864437,mask:0.9692056264029816
+INFO:__main__:top-1 acc: 97.43
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:160/1024
+INFO:__main__:lr:0.029293576063501622,data:0.10162136284634471,bt:0.533393177902326,loss:0.6616763214443618,loss_x:0.0007635021351575233,loss_u:0.33045640965460216,mask:0.9696808290900663
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:161/1024
+INFO:__main__:lr:0.029284862785078983,data:0.10131304315291345,bt:0.5309169243555516,loss:0.6617242329984153,loss_x:0.0007455327191792094,loss_u:0.33048935013961805,mask:0.9698552134796046
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:162/1024
+INFO:__main__:lr:0.02927609674735023,data:0.09953183215111494,bt:0.5270173456519842,loss:0.6579582751015657,loss_x:0.0004758235865409688,loss_u:0.32874122575751236,mask:0.9702541229780763
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:163/1024
+INFO:__main__:lr:0.02926727796610817,data:0.09966934332624078,bt:0.5288476261775941,loss:0.6582153888088651,loss_x:0.0004496063237127146,loss_u:0.3288828912425762,mask:0.9705658391467296
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:164/1024
+INFO:__main__:lr:0.029258406457240625,data:0.10044728731736541,bt:0.5287335216999054,loss:0.6603707028909892,loss_x:0.0005174715729197032,loss_u:0.32992661565903475,mask:0.9701233335654251
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.67
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:165/1024
+INFO:__main__:lr:0.029249482236730413,data:0.1001835186034441,bt:0.5283483660314232,loss:0.6614042945894445,loss_x:0.0008181941163698525,loss_u:0.33029305023653727,mask:0.9690900959540159
+INFO:__main__:top-1 acc: 97.45
+INFO:__main__:top-5 acc: 99.66
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:166/1024
+INFO:__main__:lr:0.029240505320655318,data:0.10042104939930141,bt:0.5325888497754931,loss:0.659497874449217,loss_x:0.0004302785940737408,loss_u:0.32953379792757165,mask:0.9708034391514957
+INFO:__main__:top-1 acc: 97.44
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:167/1024
+INFO:__main__:lr:0.029231475725188062,data:0.09850239683873951,bt:0.5294339472893625,loss:0.6603591716048456,loss_x:0.0006236140639259702,loss_u:0.3298677787704598,mask:0.9698464962420985
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:168/1024
+INFO:__main__:lr:0.029222393466596268,data:0.09925951226614416,bt:0.5280364169739187,loss:0.6591967111012621,loss_x:0.0004312400170931596,loss_u:0.3293827355420844,mask:0.9708252372802235
+INFO:__main__:top-1 acc: 97.48
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:169/1024
+INFO:__main__:lr:0.029213258561242444,data:0.10050739790312946,bt:0.5326551331672817,loss:0.661602200005173,loss_x:0.0007876268504318773,loss_u:0.33040728657737056,mask:0.9690094423131086
+INFO:__main__:top-1 acc: 97.51
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.47
+
+INFO:__main__:170/1024
+INFO:__main__:lr:0.029204071025583932,data:0.10012498404830694,bt:0.5289960643276572,loss:0.6622322270470204,loss_x:0.000648927419121037,loss_u:0.3307916498139497,mask:0.9702781011001207
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:171/1024
+INFO:__main__:lr:0.029194830876172903,data:0.10024022590368986,bt:0.5320391585119069,loss:0.6592332534277545,loss_x:0.00038380036055229994,loss_u:0.3294247265336011,mask:0.9707598433014937
+INFO:__main__:top-1 acc: 97.52
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:172/1024
+INFO:__main__:lr:0.029185538129656324,data:0.09991181967779994,bt:0.532092043897137,loss:0.6608708395493877,loss_x:0.00055064306520336,loss_u:0.3301600982420922,mask:0.9708186978823505
+INFO:__main__:top-1 acc: 97.46
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:173/1024
+INFO:__main__:lr:0.029176192802775905,data:0.10114132310263813,bt:0.5292443714570254,loss:0.660996024516377,loss_x:0.0004609102949046928,loss_u:0.33026755711073613,mask:0.9713396759470925
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:174/1024
+INFO:__main__:lr:0.029166794912368087,data:0.10075142490677536,bt:0.5297549907118082,loss:0.6615432222327382,loss_x:0.0007885020884259575,loss_u:0.3303773600721562,mask:0.9701211546198465
+INFO:__main__:top-1 acc: 97.55
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:175/1024
+INFO:__main__:lr:0.029157344475364017,data:0.0975913293659687,bt:0.5290296718012542,loss:0.6612537056692822,loss_x:0.0007205058240344897,loss_u:0.33026659992262386,mask:0.9701189741608687
+INFO:__main__:top-1 acc: 97.50
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:176/1024
+INFO:__main__:lr:0.029147841508789504,data:0.10023838374763727,bt:0.5296081008855253,loss:0.6596388621765847,loss_x:0.0005166904614739565,loss_u:0.3295610858575554,mask:0.9709625669638626
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.48
+
+INFO:__main__:177/1024
+INFO:__main__:lr:0.029138286029764995,data:0.09924342855811119,bt:0.5289072163868695,loss:0.6611246017529747,loss_x:0.0005318011588855143,loss_u:0.3302964002970446,mask:0.9702672017156146
+INFO:__main__:top-1 acc: 97.52
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.49
+
+INFO:__main__:178/1024
+INFO:__main__:lr:0.02912867805550554,data:0.10002419492229819,bt:0.5294600592460483,loss:0.6592110765023333,loss_x:0.0004920929174687672,loss_u:0.3293594917924323,mask:0.9708186988136731
+INFO:__main__:top-1 acc: 97.54
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.56
+INFO:__main__:Mean top-1 acc: 97.49
+
+INFO:__main__:179/1024
+INFO:__main__:lr:0.029119017603320765,data:0.09936047345399857,bt:0.5270816858392209,loss:0.660760254281446,loss_x:0.00041335772755957123,loss_u:0.3301734482769432,mask:0.9717167861526832
+INFO:__main__:top-1 acc: 97.63
+INFO:__main__:top-5 acc: 99.67
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.50
+
+INFO:__main__:180/1024
+INFO:__main__:lr:0.029109304690614842,data:0.10012413212098181,bt:0.5346797031816095,loss:0.6611428982208795,loss_x:0.0005725870013364442,loss_u:0.3302851556097715,mask:0.9704895440372638
+INFO:__main__:top-1 acc: 97.59
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.50
+
+INFO:__main__:181/1024
+INFO:__main__:lr:0.029099539334886456,data:0.09953176788985729,bt:0.5290809248108417,loss:0.6617133990355208,loss_x:0.0009798097528701533,loss_u:0.33036679464132535,mask:0.9681549496017396
+INFO:__main__:top-1 acc: 97.49
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.50
+
+INFO:__main__:182/1024
+INFO:__main__:lr:0.029089721553728774,data:0.09958471613936126,bt:0.5306159113533795,loss:0.6576956046600114,loss_x:0.0006991828151114987,loss_u:0.32849821092244996,mask:0.969613253721036
+INFO:__main__:top-1 acc: 97.56
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.51
+
+INFO:__main__:183/1024
+INFO:__main__:lr:0.0290798513648294,data:0.09826353495009243,bt:0.528012647293508,loss:0.6585970958493673,loss_x:0.0004429852009479873,loss_u:0.32907705532420967,mask:0.9704655659152195
+INFO:__main__:top-1 acc: 97.57
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.51
+
+INFO:__main__:184/1024
+INFO:__main__:lr:0.02906992878597037,data:0.09995536832138896,bt:0.530113841407001,loss:0.6594433688202046,loss_x:0.00044292244447774465,loss_u:0.32950022318786343,mask:0.9710127025609836
+INFO:__main__:top-1 acc: 97.53
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.52
+
+INFO:__main__:185/1024
+INFO:__main__:lr:0.0290599538350281,data:0.1008277921937406,bt:0.5310856357682496,loss:0.6582696183466266,loss_x:0.0007630162913514482,loss_u:0.32875330102763756,mask:0.9704960842500441
+INFO:__main__:top-1 acc: 97.54
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.52
+
+INFO:__main__:186/1024
+INFO:__main__:lr:0.029049926529973354,data:0.10028478759340942,bt:0.5289925402030349,loss:0.6589591699662125,loss_x:0.00042358200393266543,loss_u:0.3292677939811399,mask:0.9705178812728263
+INFO:__main__:top-1 acc: 97.53
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.52
+
+INFO:__main__:187/1024
+INFO:__main__:lr:0.029039846888871228,data:0.0987617711070925,bt:0.5278844516724348,loss:0.6571826659416065,loss_x:0.0007146963588837707,loss_u:0.32823398479136134,mask:0.9690290599246509
+INFO:__main__:top-1 acc: 97.53
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.63
+INFO:__main__:Mean top-1 acc: 97.53
+
+INFO:__main__:188/1024
+INFO:__main__:lr:0.029029714929881094,data:0.1005675308406353,bt:0.5310730952769518,loss:0.6584028170246116,loss_x:0.0004336812567728998,loss_u:0.32898456788391933,mask:0.9705396803910844
+INFO:__main__:top-1 acc: 97.64
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.54
+
+INFO:__main__:189/1024
+INFO:__main__:lr:0.029019530671256587,data:0.10047552199102938,bt:0.5305234859697521,loss:0.6578263041122863,loss_x:0.0006107832212194353,loss_u:0.3286077604455334,mask:0.9695020833751187
+INFO:__main__:top-1 acc: 97.59
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.54
+
+INFO:__main__:190/1024
+INFO:__main__:lr:0.02900929413134556,data:0.10030674817971885,bt:0.5333773700986058,loss:0.6588115275139511,loss_x:0.0008019963475973668,loss_u:0.3290047655831769,mask:0.9700513991992921
+INFO:__main__:top-1 acc: 97.60
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.54
+
+INFO:__main__:191/1024
+INFO:__main__:lr:0.028999005328590063,data:0.09941823012195528,bt:0.5279340958222747,loss:0.656825476846569,loss_x:0.0004195133526181394,loss_u:0.32820298174697543,mask:0.9705178817384876
+INFO:__main__:top-1 acc: 97.55
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.55
+
+INFO:__main__:192/1024
+INFO:__main__:lr:0.02898866428152629,data:0.10086479410529137,bt:0.5302805118262768,loss:0.6583482367987412,loss_x:0.0007595686070800411,loss_u:0.3287943340958306,mask:0.9699467681348324
+INFO:__main__:top-1 acc: 97.58
+INFO:__main__:top-5 acc: 99.63
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.55
+
+INFO:__main__:193/1024
+INFO:__main__:lr:0.028978271008784567,data:0.10044276365078986,bt:0.5312732956372201,loss:0.6589097829503399,loss_x:0.0004320255510634752,loss_u:0.32923887869963825,mask:0.9708688340615481
+INFO:__main__:top-1 acc: 97.57
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.56
+
+INFO:__main__:194/1024
+INFO:__main__:lr:0.028967825529089303,data:0.10092473169788718,bt:0.5312467673793435,loss:0.6612374752345578,loss_x:0.0006184161230038399,loss_u:0.33030952955577697,mask:0.9704830048722215
+INFO:__main__:top-1 acc: 97.57
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.56
+
+INFO:__main__:195/1024
+INFO:__main__:lr:0.028957327861258972,data:0.10053103510290384,bt:0.5299029499292374,loss:0.6585317169702579,loss_x:0.0004206277678875381,loss_u:0.3290555446011852,mask:0.9713440373889171
+INFO:__main__:top-1 acc: 97.56
+INFO:__main__:top-5 acc: 99.64
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.56
+
+INFO:__main__:196/1024
+INFO:__main__:lr:0.028946778024206067,data:0.09897832432761788,bt:0.5289598414674401,loss:0.6584386967395885,loss_x:0.000854328243740099,loss_u:0.3287921842479242,mask:0.9702301453216933
+INFO:__main__:top-1 acc: 97.55
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.56
+
+INFO:__main__:197/1024
+INFO:__main__:lr:0.028936176036937055,data:0.10113211488351226,bt:0.533009339356795,loss:0.6583830109862916,loss_x:0.0004907068371409196,loss_u:0.32894615207457534,mask:0.9703434950788505
+INFO:__main__:top-1 acc: 97.58
+INFO:__main__:top-5 acc: 99.61
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.57
+
+INFO:__main__:198/1024
+INFO:__main__:lr:0.028925521918552372,data:0.09954317356459796,bt:0.5290594855323434,loss:0.65787457839241,loss_x:0.0005098389898563482,loss_u:0.32868236970127684,mask:0.9704764657071792
+INFO:__main__:top-1 acc: 97.59
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.57
+
+INFO:__main__:199/1024
+INFO:__main__:lr:0.02891481568824637,data:0.09927775990217924,bt:0.5299131483770907,loss:0.6586075615127778,loss_x:0.000627185190673174,loss_u:0.3289901881610523,mask:0.9698595742811449
+INFO:__main__:top-1 acc: 97.61
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.57
+
+INFO:__main__:200/1024
+INFO:__main__:lr:0.028904057365307278,data:0.09867352875880897,bt:0.5287207057699561,loss:0.6599110282087486,loss_x:0.000453524062031363,loss_u:0.3297287520733586,mask:0.9711282345233485
+INFO:__main__:top-1 acc: 97.61
+INFO:__main__:top-5 acc: 99.65
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.57
+
+INFO:__main__:201/1024
+INFO:__main__:lr:0.028893246969117183,data:0.09967310563661158,bt:0.5288147998508066,loss:0.6585725026668013,loss_x:0.0006415099475916008,loss_u:0.32896549635960487,mask:0.9707707418710925
+INFO:__main__:top-1 acc: 97.60
+INFO:__main__:top-5 acc: 99.62
+INFO:__main__:Best top-1 acc: 97.64
+INFO:__main__:Mean top-1 acc: 97.57
+
